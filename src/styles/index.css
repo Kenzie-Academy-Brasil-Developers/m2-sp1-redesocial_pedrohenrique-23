@@ -1,0 +1,281 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header{
+    background-color: var(--grey1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+}
+.main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.header__btn{
+    margin-right: 50px;
+    color: var(--whiteFixed);
+}
+
+.header__logo{
+    margin-left: 50px;
+}
+
+.image-perfil{
+    height: 3.125rem;
+}
+
+.main__post-creation__profission, .main__sugestions-list__profission, .main__post-listing__profission{
+    color: var(--grey2);
+}
+
+.main__post-creation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main__post-creation__user{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    width: 65%;
+    margin: 7px 15px;
+    
+}
+
+.main__post-creation__div-user{
+    height: 75px;
+    margin-bottom: 50px;    
+}
+
+.main__post-creation__form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.main__post-creation__input-title{
+    color: var(--grey2);
+    border: 1px solid var(--grey4);
+    border-radius: 5px;
+    margin: 7px 15px;
+
+}
+
+.main__post-creation__textarea-description{
+    color: var(--grey2);
+    border: 1px solid var(--grey4);
+    border-radius: 5px;
+    margin: 7px 15px;
+    resize: none;
+}
+
+.main__sugestions{
+   margin: 7px 15px;
+    height: 405px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.main__sugestions-list__itens{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main__sugestions-list__itens__user{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* -------- BOTÕES ---------------- */
+.main__sugestions-list__item__btn-seguir{
+    background-color: var(--whiteFixed);
+    color: var(--grey1);
+    padding: 6px 10px;
+    border: 1px solid var(--grey1);
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.main__post-creation__btn-post{
+    background-color: var(--brand-1);
+    color: var(--whiteFixed);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 14px;
+    width: auto;
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-right: 1rem;
+    height: 30px;
+}
+
+.main__post-listing__openpost-btn{
+    background-color: var(--grey1);
+    color: var(--whiteFixed);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 14px;
+    width: auto;
+    height: 30px;
+    align-self: flex-end;
+}
+
+/* ------- HOVERS E FOCUS ----------*/
+
+.main__post-creation__btn-post:hover{
+    background-color: var(--brand-2);
+}
+
+.main__sugestions-list__item__btn-seguir:hover{
+    background-color: var(--whiteFixed);
+    color: var(--brand-2);
+    border-color: var(--brand-2);
+}
+
+.main__sugestions-list__item__btn-seguir:focus{
+    color: var(--whiteFixed);
+    background-color: var(--brand-2);
+    border-color: var(--brand-2);
+}
+
+.main__post-listing__openpost-btn:hover{
+    background-color: var(--grey0);
+}
+
+.main__post-creation__input-title:focus, .main__post-creation__textarea-description:focus{
+    border-color: var(--brand-2);
+} 
+
+.main__post-listing{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.main__post-listing__like-icon, .main__post-listing__like-num{
+    display: flex;
+    align-self: flex-end;
+    
+}
+
+.area-buttons{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 10%;
+}
+
+.area-like{
+    display: flex;
+    gap: 5px;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    height: 10%;
+}
+
+/* Estilos gerais */
+
+/* Quando a largura da tela for menor que 1025px */
+@media (max-width: 1024px) {
+    /* Header */
+    .header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .header__logo {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .header__btn {
+      margin-right: 0;
+    }
+  
+    /* Conteúdo Principal */
+    .main {
+      margin: 20px;
+    }
+  
+    .main__post-creation__user,
+    .main__sugestions {
+      width: 100%;
+    }
+
+    .main__sugestions-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .main__sugestions-list__itens{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main__sugestions-list__itens__user {
+      justify-content: center;
+    }
+
+    .main__post-creation{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+  
+    /* Botões */
+    .main__post-creation__btn-post,
+    .main__sugestions-list__item__btn-seguir,
+    .main__post-listing__openpost-btn {
+      width: 20%;
+      align-self: flex-start;
+    }
+  
+    /* Posts */
+    .main__post-listing__post__user {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main__post-listing__like-icon,
+    .main__post-listing__like-num {
+      display: none;
+    }
+  
+    .area-buttons,
+    .area-like {
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  
