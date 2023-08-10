@@ -1,220 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
-    <link rel="stylesheet" href="src/styles/globalStyles.css">
-    <link rel="stylesheet" href="src/styles/text.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FONTE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/index.css" />
+  <link rel="stylesheet" href="src/styles/globalStyles.css">
+  <link rel="stylesheet" href="src/styles/text.css">
 
-    <title>Criando rede social</title>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <img src="./src/assets/img/logo.svg" alt="" class="header__logo"/>
-      <p class="header__btn text2">Sair</p>
-    </header>
+  <!-- FONTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main class="main">
-      <!-- ÁREA 1 (CRIAÇÃO DE POST E SUGESTÕES)-->
-      <section class="main__post-creation">
-        <!-- CRIAÇÃO DE UM NOVO POST -->
-        <section class="main__post-creation__user">
-          <div class="main__post-creation__div-user">
-            <img src="./src/assets/img/user1.svg" alt="Samuel" class="main__post-creation__img-user image-perfil"/>
-            <div class="main__post-creation__inf-user">
-              <h2 class="main__post-creation__name-user title2">Samuel Leão</h2>
-              <p class="main__post-creation__profission text2">Front end Engineer</p>
-            </div>
+  <title>Criando rede social</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <img src="./src/assets/img/logo.svg" alt="" class="header__logo" />
+    <p class="header__btn text2">Sair</p>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="main">
+    <!-- ÁREA 1 (CRIAÇÃO DE POST E SUGESTÕES)-->
+    <section class="main__post-creation">
+      <!-- CRIAÇÃO DE UM NOVO POST -->
+      <section class="main__post-creation__user">
+        <div class="main__post-creation__div-user">
+          <img src="./src/assets/img/user1.svg" alt="Samuel" class="main__post-creation__img-user image-perfil" />
+          <div class="main__post-creation__inf-user">
+            <h2 class="main__post-creation__name-user title2">Samuel Leão</h2>
+            <p class="main__post-creation__profission text2">Front end Engineer</p>
           </div>
+        </div>
 
-          <!-- FORM DE CRIAÇÃO DE UM NOVO POST -->
-          <form class="main__post-creation__form">
-            <input
-              type="text"
-              placeholder="Digite o título do post"
-              required=""
-              class="main__post-creation__input-title text1"
-            />
-            <textarea
-              placeholder="Digite a descrição do post"
-              name=""
-              id=""
-              cols="30"
-              rows="5"
-              required=""
-              class="main__post-creation__textarea-description text1"
-            ></textarea>
-            <button type="submit" class="main__post-creation__btn-post">Postar</button>
-          </form>
-        </section>
-
-        <!-- SUGESTÕES PARA SEGUIR -->
-        <section class="main__sugestions">
-          <h2 class="main__sugestions-title title2">Sugestões para você seguir</h2>
-          <ul class="main__sugestions-list">
-            <!-- SUGESTÃO 1 -->
-            <li class="main__sugestions-list__itens">
-              <div class="main__sugestions-list__itens__user">
-                <img src="./src/assets/img/user2.svg" alt="Carlos Lima" class="main__sugestions-list__itens__image-user image-perfil"/>
-                <div class="main__sugestions-list__itens__info-user">
-                  <h2 class="main__sugestions-list__itens__name-user title2">Carlos Lima</h2>
-                  <p class="main__sugestions-list__profission text2">UX e UI Designer</p>
-                </div>
-              </div>
-              <button class="main__sugestions-list__item__btn-seguir">Seguir</button>
-            </li>
-            <!-- SUGESTÃO 2 -->
-            <li class="main__sugestions-list__itens">
-              <div class="main__sugestions-list__itens__user">
-                <img src="./src/assets/img/user3.svg" alt="Rafael Bertoldo" class="main__sugestions-list__itens__image-user image-perfil"/>
-                <div class="main__sugestions-list__itens__info-user">
-                  <h2 class="main__sugestions-list__itens__name-user title2">Rafael Bertoldo</h2>
-                  <p class="main__sugestions-list__profission text2">Devop's</p>
-                </div>
-              </div>
-              <button class="main__sugestions-list__item__btn-seguir">Seguir</button>
-            </li>
-            <!-- SUGESTÃO 3 -->
-            <li class="main__sugestions-list__itens">
-              <div class="main__sugestions-list__itens__user">
-                <img src="./src/assets/img/user4.svg" alt="Júlia Martins" class="main__sugestions-list__itens__image-user image-perfil"/>
-                <div class="main__sugestions-list__itens__info-user">
-                  <h2 class="main__sugestions-list__itens__name-user title2">Júlia Martins</h2>
-                  <p class="main__sugestions-list__profission text2">Fullstack Engineer</p>
-                </div>
-              </div>
-              <button class="main__sugestions-list__item__btn-seguir">Seguir</button>
-            </li>
-          </ul>
-        </section>
+        <!-- FORM DE CRIAÇÃO DE UM NOVO POST -->
+        <form class="main__post-creation__form">
+          <input type="text" placeholder="Digite o título do post" required=""
+            class="main__post-creation__input-title text1" />
+          <textarea placeholder="Digite a descrição do post" name="" id="" cols="30" rows="5" required=""
+            class="main__post-creation__textarea-description text1"></textarea>
+          <button type="submit" class="main__post-creation__btn-post">Postar</button>
+        </form>
       </section>
 
-      <!-- ÁREA 2 (LISTAGEM DE POSTS) -->
-      <section class="main__post-listing">
-        <h2 class="main__post-listing__title title1">Posts</h2>
-        <!-- POST 1 -->
-        <article class="main__post-listing__post">
-          <div class="main__post-listing__post__user">
-            <img src="./src/assets/img/user5.svg" alt="Iris Silva" class="main__post-listing__image-user image-perfil"/>
-            <div class="main__post-listing__info-user">
-              <h2 class="main__post-listing__name-user title2">Iris Silva</h2>
-              <p class="main__post-listing__profission text2">Front end Engineer</p>
-            </div>
-          </div>
-          <h2 class="main__post-listing__post-title title1">
-            Empresa de Tecnologia da Informação abre vagas para programa de
-            estágio
-          </h2>
-          <p class="main__post-listing__post-content text1">
-            A Framework Digital, empresa mineira especializada em Tecnologia da
-            Informação, irá iniciar o seu sexto programa de estágio, com o prazo
-            de inscrições entre os dias 08 e 28 de agosto. O programa é
-            conhecido como Framework Padawans, com inspiração nos filmes Star
-            Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar
-            cavaleiros Jedi, que compõem o lado bom da força.
-          </p>
-          <div class="area-buttons">
-            <button class="main__post-listing__openpost-btn">Abrir Post</button>
-            <div class="area-like">
-              <img
-                src="./src/assets/img/gray-heart.svg"
-                alt="Empty Heart(Post not liked)"
-                class="main__post-listing__like-icon"
-              />
-              <small class="main__post-listing__like-num">25</small>
-            </div>
-          </div>
-        </article>
+      <!-- SUGESTÕES PARA SEGUIR -->
+      <section class="main__sugestions">
+        <h2 class="main__sugestions-title title2">Sugestões para você seguir</h2>
+        <ul class="main__sugestions-list">
 
-        <!-- POST 2 -->
-        <article class="main__post-listing__post">
-          <div class="main__post-listing__post__user">
-            <img src="./src/assets/img/user6.svg" alt="Carla Maria" 
-            class="main__post-listing__image-user image-perfil"/>
-            <div class="main__post-listing__info-user">
-              <h2 class="main__post-listing__name-user title2">Carla Maria</h2>
-              <p class="main__post-listing__profission text2">Back end Engineer</p>
-            </div>
-          </div>
-          <h2 class="main__post-listing__post-title title1">
-            Programa de estágio abre vagas em Segurança da Informação com regime
-            remoto
-          </h2>
-          <p class="main__post-listing__post-content text1">
-            Em Segurança da Informação, as vagas são destinadas às áreas de
-            Security Operations Center (SOC), Administração de Dispositivos de
-            Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade
-            e Consultoria Técnica. O candidato interessado deverá estar
-            matriculado em um curso superior em Ciência da Computação, Segurança
-            da Informação, Tecnologia da Informação e afins, com previsão de
-            conclusão do curso de fevereiro de 2023 a fevereiro de 2025.
-          </p>
-          <div class="area-buttons">
-            <button class="main__post-listing__openpost-btn">Abrir Post</button>
-            <div class="area-like">
-              <img
-                src="./src/assets/img/gray-heart.svg"
-                alt="Empty Heart(Post not liked)"
-                class="main__post-listing__like-icon"
-              />
-              <small class="main__post-listing__like-num">19</small>
-            </div>
-          </div>
-        </article>
-
-        <!-- POST 3 -->
-        <article class="main__post-listing__post">
-          <div class="main__post-listing__post__user">
-            <img src="./src/assets/img/user7.svg" alt="João Carvalho" 
-            class="main__post-listing__image-user image-perfil"/>
-            <div class="main__post-listing__info-user">
-              <h2 class="main__post-listing__name-user title2">João Carvalho</h2>
-              <p class="main__post-listing__profission text2">Devop's</p>
-            </div>
-          </div>
-          <h2 class="main__post-listing__post-title title1">
-            O que é programação orientada a objetos e programação funcional
-          </h2>
-          <p class="main__post-listing__post-content text1">
-            A Programação Funcional é uma orientação focada na programação
-            declarativa. Conhecendo mais a programação funcional a partir de
-            códigos podemos nos deparar de primeira com o conceito mais central
-            da programação funcional, que é o conceito de funções puras, isso
-            significa que o retorno de uma função deve depender apenas dos seus
-            parâmetros de entrada. Com classes podemos editar os valores das
-            propriedades dos objetos criados ou ainda criar métodos para essas
-            propriedades, ainda por cima podemos definir se vão ser públicos
-            (vão para o objeto) ou estáticos (não são instanciados, ou seja, não
-            vão para o objeto), e isso tem seu lado bom e ruim.
-          </p>
-          <div class="area-buttons">
-            <button class="main__post-listing__openpost-btn">Abrir Post</button>
-            <div class="area-like">
-              <img
-                src="./src/assets/img/gray-heart.svg"
-                alt="Empty Heart(Post not liked)"
-                class="main__post-listing__like-icon"
-              />
-              <small class="main__post-listing__like-num">8</small>
-            </div>
-          </div>
-        </article>
+        </ul>
       </section>
-    </main>
-  </body>
+    </section>
+
+    <!-- ÁREA 2 (LISTAGEM DE POSTS) -->
+    <section class="main__post-listing">
+      <h2 class="main__post-listing__title title1">Posts</h2>
+      
+    </section>
+
+    <dialog id="postModal">
+      <div id="modalContent">
+        
+      </div>
+    </dialog>
+
+  </main>
+  <script src="src/scripts/database.js"></script>
+  <script src="src/scripts/index.js" type="module"></script>
+</body>
+
 </html>
