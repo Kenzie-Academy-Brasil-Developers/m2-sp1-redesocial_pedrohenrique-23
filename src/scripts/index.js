@@ -1,7 +1,5 @@
-// Importar os arrays do arquivo database.js
 import { suggestUsers, posts } from './database.js';
 
-// Criando a lista de sugestões OK
 function addSuggestionToDOM(user) {
   const suggestionsList = document.querySelector(".main__sugestions-list");
 
@@ -32,7 +30,6 @@ function addSuggestionToDOM(user) {
   followButton.textContent = "Seguir";
 
 
-  // Adicionando os elementos OK
   userInfoDiv.appendChild(userName);
   userInfoDiv.appendChild(userStack);
   userDiv.appendChild(userImage);
@@ -42,7 +39,7 @@ function addSuggestionToDOM(user) {
   suggestionsList.appendChild(suggestionItem);
 }
 
-// Função para pecorrer e adicionar todas as sugestões OK
+
 function addSuggestionsToDOM(suggestions) {
   for (let i = 0; i < suggestions.length; i++) {
     const user = suggestions[i];
@@ -55,7 +52,7 @@ addSuggestionsToDOM(suggestUsers);
 
 const postListContainer = document.querySelector(".main__post-listing");
 
-// Função para criar um único elemento de postagem OK
+
 function createPostElement(post) {
   const postElement = document.createElement("article");
   postElement.classList.add("main__post-listing__post");
@@ -106,7 +103,6 @@ function createPostElement(post) {
   likeNum.classList.add("main__post-listing__like-num");
   likeNum.textContent = post.likes;
 
-  // Adicionar os elementos criados OK
   userInfoDiv.appendChild(userName);
   userInfoDiv.appendChild(userStack);
   userDiv.appendChild(userImage);
@@ -123,7 +119,6 @@ function createPostElement(post) {
   return postElement;
 }
 
-// Função para criar e adicionar a lista de postagens ao container OK
 
 function createPostList(posts) {
   for (let i = 0; i < posts.length; i++) {
@@ -135,7 +130,6 @@ function createPostList(posts) {
 
 createPostList(posts);
 
-// modal
 
 document.addEventListener('DOMContentLoaded', () => {
   const openPostButtons = document.querySelectorAll('.main__post-listing__openpost-btn');
@@ -145,7 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
   modalCloseButton.classList.add('modal__close-button');
   modalCloseButton.innerHTML = '&times;';
 
-  // função para criar o modal dinamicamente
   function createModalPostContent(post) {
     const modalContentElement = document.createElement("div");
     modalContentElement.classList.add("modal__content");
@@ -192,7 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return modalContentElement;
   }
 
-  // função para abrir post com evento "click"
   function handleOpenPostClick(index) {
     return () => {
       const post = posts[index];
